@@ -14,12 +14,12 @@ export const Movie = ({item}) => {
         alt={item.title}
       />
       <div className="absolute top-0 w-full h-full hover:bg-black/80 opacity-0 text-white hover:opacity-100">
-        <p className="white-space-normal text-xs md:text-sm font-bold flex justify-center items-center h-full text-center">
-          {item?.title}
-        </p>
+            <p className="whitespace-normal text-xs md:text-sm font-bold flex justify-center items-center h-full text-center">
+            {item?.title}
+            </p>
         <p>
           {like ? (
-            <FaHeart className="absolute top-4 left-4 text-gray-300" />
+            <FaHeart className="absolute top-4 left-4 text-gray-300 " /> && <button className = "absolute top-4 left-4">BUTTON</button>
           ) : (
             <FaRegHeart className="absolute top-4 left-4 text-gray-300" />
           )}
